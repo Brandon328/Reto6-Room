@@ -1,0 +1,177 @@
+:root {
+  --dark-gray: hsl(0, 0%, 63%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --very-dark-gray: hsl(0, 0%, 27%);
+
+  --general-padding: 32px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+}
+
+main {
+  width: 100%;
+}
+
+main section {
+  padding: var(--general-padding);
+}
+
+/* Section 1 */
+
+#section-1 {
+  background-image: url('./images/mobile-image-hero-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 56vh;
+  position: relative;
+  text-align: center;
+}
+
+#section-1 nav {
+  display: none;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  background-color: var(--white);
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 40px var(--general-padding);
+}
+
+#section-1 nav ul {
+  list-style: none;
+  display: flex;
+}
+
+#section-1 nav ul li {
+  padding-inline-start: 24px;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#section-1 nav ul li a {
+  text-decoration: none;
+}
+
+#section-1 nav ul a:hover {
+  border-bottom: 2px solid var(--black);
+}
+
+#section-1 .slider-buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  display: flex;
+}
+
+#section-1 .slider-buttons figure {
+  padding: 20px;
+  background-color: var(--black);
+  cursor: pointer;
+}
+
+#section-1 .slider-buttons figure img {
+  height: 14px;
+}
+
+#menu-icon {
+  position: absolute;
+  left: var(--general-padding);
+  cursor: pointer;
+}
+
+/* ************************** */
+
+/* Section 2 */
+
+.section-2 {
+  padding: 60px var(--general-padding);
+}
+
+.section-2 p {
+  font-size: 12px;
+  margin: 16px 0;
+  line-height: 20px;
+  color: var(--dark-gray);
+}
+
+.section-2 .shop-button {
+  margin: 48px 16px 0 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-2 .shop-button:hover span {
+  color: var(--dark-gray);
+}
+
+.section-2 .shop-button span {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 12px;
+  margin-inline-end: 36px;
+}
+
+/* ************************** */
+
+/* Section 3 */
+
+.section-3 {
+  background-image: url('./images/image-about-dark.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 35vh;
+}
+
+/* ************************** */
+
+/* Section 4 */
+
+.section-4 {
+  padding: 48px var(--general-padding);
+}
+
+.section-4 h3 {
+  font-size: 16px;
+}
+
+.section-4 p {
+  font-size: 12px;
+  margin: 12px 0;
+  line-height: 20px;
+  color: var(--dark-gray);
+}
+
+/* ************************** */
+
+
+/* Section 5 */
+
+.section-5 {
+  background-image: url('./images/image-about-light.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 35vh;
+}
+
+/* ************************** */
