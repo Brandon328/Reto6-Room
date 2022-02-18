@@ -79,6 +79,7 @@ main section {
   right: 0;
 
   display: flex;
+  background-color: var(--black);
 }
 
 #section-1 .slider-buttons figure {
