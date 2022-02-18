@@ -146,7 +146,7 @@ main section {
 /* Section 3 */
 
 .section-3 {
-  background-image: url('Reto6-Room/images/image-about-dark.jpg');
+  background-image: url('/Reto6-Room/images/image-about-dark.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -179,7 +179,7 @@ main section {
 /* Section 5 */
 
 .section-5 {
-  background-image: url('Reto6-Room/images/image-about-light.jpg');
+  background-image: url('/Reto6-Room/images/image-about-light.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
