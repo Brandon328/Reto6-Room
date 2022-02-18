@@ -20,30 +20,32 @@
 <body>
   <main>
     <section id="section-1">
-      <img id="menu-icon" src="./images/icon-hamburger.svg" alt="menu icon">
-      <img id="logo" src="./images/logo.svg" alt="logo">
-      <nav>
-        <img src="./images/icon-close.svg" alt="close icon">
-        <ul>
-          <li><a href="#">home</a></li>
-          <li><a href="#">shop</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">contact</a></li>
-        </ul>
-      </nav>
+      <div class="nav-contianer">
+        <img id="menu-icon" src="./images/icon-hamburger.svg" alt="menu icon">
+        <img id="logo" src="./images/logo.svg" alt="logo">
+        <nav id="navbar">
+          <img id="close-icon" src="./images/icon-close.svg" alt="close icon">
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">shop</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+      </div>
       <div class="slider-buttons">
-        <figure>
+        <figure id="prev">
           <img src="./images/icon-angle-left.svg" alt="left arrow icon">
         </figure>
-        <figure>
+        <figure id="next">
           <img src="./images/icon-angle-right.svg" alt="right arrow icon">
         </figure>
       </div>
     </section>
 
     <section class="section-2">
-      <h2>Discover innovative ways to decorate</h2>
-      <p>
+      <h2 id="title">Discover innovative ways to decorate</h2>
+      <p id="content">
         We provide unmatched quality, comfort, and style for property owners across the
         country. Our experts combine form andnfunction in bringing your vision to
         life. Create a room in your own style with our collection and make your
@@ -70,6 +72,8 @@
 
     <section class="section-5"></section>
   </main>
+
+  <script src="main.js"></script>
 </body>
 
 </html>

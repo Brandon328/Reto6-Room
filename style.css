@@ -28,7 +28,6 @@ main section {
 /* Section 1 */
 
 #section-1 {
-  background-image: url('./images/mobile-image-hero-1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 56vh;
@@ -66,10 +65,12 @@ main section {
 
 #section-1 nav ul li a {
   text-decoration: none;
+  color: var(--black);
 }
 
 #section-1 nav ul a:hover {
   border-bottom: 2px solid var(--black);
+  padding-bottom: 8px;
 }
 
 #section-1 .slider-buttons {
@@ -90,6 +91,10 @@ main section {
   height: 14px;
 }
 
+#section-1 .slider-buttons figure:hover {
+  background-color: var(--very-dark-gray);
+}
+
 #menu-icon {
   position: absolute;
   left: var(--general-padding);
@@ -101,7 +106,11 @@ main section {
 /* Section 2 */
 
 .section-2 {
-  padding: 60px var(--general-padding);
+  padding: 72px var(--general-padding);
+}
+
+.section-2 h2 {
+  font-size: 28px;
 }
 
 .section-2 p {
@@ -112,11 +121,12 @@ main section {
 }
 
 .section-2 .shop-button {
-  margin: 48px 16px 0 0;
+  margin: 48px 0 0;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 264px;
 }
 
 .section-2 .shop-button:hover span {
@@ -127,7 +137,7 @@ main section {
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 12px;
-  margin-inline-end: 36px;
+  margin-inline-end: 24px;
 }
 
 /* ************************** */
@@ -147,16 +157,17 @@ main section {
 /* Section 4 */
 
 .section-4 {
-  padding: 48px var(--general-padding);
+  padding: 72px var(--general-padding);
 }
 
 .section-4 h3 {
-  font-size: 16px;
+  font-size: 14px;
+  letter-spacing: 6px;
 }
 
 .section-4 p {
   font-size: 12px;
-  margin: 12px 0;
+  margin: 12px 0 0;
   line-height: 20px;
   color: var(--dark-gray);
 }
@@ -175,3 +186,157 @@ main section {
 }
 
 /* ************************** */
+
+
+@media (min-width: 550px) {
+  #section-1 {
+    background-position: center;
+  }
+}
+
+
+@media (min-width: 700px) {
+  main {
+    display: grid;
+    grid-template-rows: 60vh 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #section-1 {
+    grid-area: 1 / 1 / 2 / 3;
+    height: 100%;
+    text-align: start;
+  }
+
+  #section-1 nav {
+    display: inline-flex;
+    position: relative;
+    background-color: transparent;
+    padding: 0;
+    width: auto;
+  }
+
+  #section-1 nav ul li {
+    padding-inline-start: 32px;
+  }
+
+  #section-1 nav ul li a {
+    color: var(--white);
+    font-size: 14px;
+  }
+
+  #section-1 nav>img {
+    display: none;
+  }
+
+  #section-1 nav ul a:hover {
+    border-bottom: 2px solid var(--white);
+  }
+
+  #menu-icon {
+    display: none;
+  }
+
+  #logo {
+    margin-inline-end: 40px;
+  }
+
+  .nav-contianer {
+    display: flex;
+    align-items: center;
+  }
+
+  .section-4 {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section-3,
+  .section-5 {
+    height: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  :root {
+    --general-padding: 40px;
+  }
+
+  main {
+    grid-template-rows: 70vh 30vh;
+    grid-template-columns: 30vw 30vw 10vw 30vw;
+  }
+
+  #section-1 {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  #section-1 .slider-buttons {
+    left: 100%;
+    width: 10vw;
+  }
+
+  #section-1 .slider-buttons figure {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #section-1 .slider-buttons figure img {
+    height: 24px;
+  }
+
+  .section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: 1 / 3 / 2 / 5;
+  }
+
+  .section-2 .shop-button {
+    margin: 18px 0 0 0;
+  }
+
+  .section-2 h2 {
+    font-size: 36px;
+  }
+
+  .section-4 {
+    order: 0;
+    grid-area: 2 / 2 / 3 / 4;
+  }
+
+  .section-4 h3 {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --general-padding: 64px;
+  }
+
+  .section-2 h2 {
+    font-size: 44px;
+  }
+
+  .section-2 p,
+  .section-4 p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  #section-1 .slider-buttons figure {
+    padding: 24px;
+  }
+}
+
+
+@media (min-width: 1400px) {
+  .section-2 {
+    padding: 0 124px;
+  }
+}
